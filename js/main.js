@@ -2,8 +2,8 @@ const FEATURES = [
   'wifi',
   'dishwasher',
   'parking',
-  'washer', 
-  'elevator', 
+  'washer',
+  'elevator',
   'conditioner',
 ];
 
@@ -17,8 +17,8 @@ const TYPES = [
   'palace',
   'flat',
   'house',
-  'bungalow', 
-  'hotel', 
+  'bungalow',
+  'hotel',
 ];
 
 const TIME_IN_OUT = [
@@ -50,7 +50,7 @@ const getRandomArrayElement = (elements) => {
 }
 
 const uniqueRandomArr = (elements) => {
-  let newArr = [];
+  const newArr = [];
   const arrLength = _.random(0, elements.length-1);
   let currentValue = getRandomArrayElement(elements);
   while (arrLength !== newArr.length-1) {
@@ -77,7 +77,7 @@ const createAuthor = (index) => {
 
 const createOffer = (location) => {
   return {
-    title: "Тестовый заголовок",
+    title: 'Тестовый заголовок',
     address: location.lat + ' ,' + location.lng,
     price: randomInt(23000, 75000),
     type: getRandomArrayElement(TYPES),
@@ -86,7 +86,7 @@ const createOffer = (location) => {
     checkin: getRandomArrayElement(TIME_IN_OUT),
     checkout: getRandomArrayElement(TIME_IN_OUT),
     features: uniqueRandomArr(FEATURES),
-    description: "Тестовое описание",
+    description: 'Тестовое описание',
     photos: uniqueRandomArr(PHOTOS), 
   };
 };
@@ -117,5 +117,5 @@ for (let index = 1; index <= 10; index++) {
 
 console.log(arrAnnouncements);
 
-getRandomPositiveFloat(1,3);
-getRandomPositiveInteger(1,3);
+const test1 = getRandomPositiveFloat(1,3);
+const test2 = getRandomPositiveInteger(1,3);
