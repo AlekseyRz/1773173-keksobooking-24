@@ -9,7 +9,7 @@ const FEATURES = [
 
 const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
-  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 
+  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
 ];
 
@@ -33,7 +33,7 @@ const randomInt = (min, max) => {
   } else {
     const rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
-  }
+  };
 };
 
 const randomFloat = (min, max, decimalPlaces) => {
@@ -42,8 +42,12 @@ const randomFloat = (min, max, decimalPlaces) => {
   } else {
     const rand = Math.random() * (max - min) + min;
     return rand.toFixed(decimalPlaces);
-  }
+  };
 };
+
+const getRandomArrayElement = (elements) => {
+  return elements[_.random(0, elements.length-1)];
+}
 
 const uniqueRandomArr = (elements) => {
   let newArr = [];
@@ -64,10 +68,6 @@ const leadingZero = (index) => {
   }
   return index.toString();
 };
-
-const getRandomArrayElement = (elements) => {
-  return elements[_.random(0, elements.length-1)];
-}
 
 const createAuthor = (index) => {
   return {
@@ -112,7 +112,7 @@ const createAnnouncement = (index) => {
 
 const arrAnnouncements = [];
 for (let index = 1; index <= 10; index++) {
-  arrAnnouncements.push(createAnnouncement(index))
+  arrAnnouncements.push(createAnnouncement(index));
 }
 
 console.log(arrAnnouncements);
