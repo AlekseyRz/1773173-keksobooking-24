@@ -47,7 +47,7 @@ const randomFloat = (min, max, decimalPlaces) => {
 
 const getRandomArrayElement = (elements) => {
   return elements[_.random(0, elements.length-1)];
-}
+};
 
 const uniqueRandomArr = (elements) => {
   const newArr = [];
