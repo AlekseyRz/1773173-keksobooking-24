@@ -4,13 +4,13 @@ const FEATURES = [
   'parking',
   'washer',
   'elevator',
-  'conditioner',
+  'conditioner'
 ];
 
 const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg',
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg',
-  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
+  'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'
 ];
 
 const TYPES = [
@@ -18,13 +18,13 @@ const TYPES = [
   'flat',
   'house',
   'bungalow',
-  'hotel',
+  'hotel'
 ];
 
 const TIME_IN_OUT = [
   '12:00',
   '13:00',
-  '14:00',
+  '14:00'
 ];
 
 const randomInt = (min, max) => {
@@ -45,9 +45,7 @@ const randomFloat = (min, max, decimalPlaces) => {
   };
 };
 
-const getRandomArrayElement = (elements) => {
-  return elements[_.random(0, elements.length-1)];
-};
+const getRandomArrayElement = (elements) => elements[_.random(0, elements.length-1)];
 
 const uniqueRandomArr = (elements) => {
   const newArr = [];
@@ -117,5 +115,3 @@ for (let index = 1; index <= 10; index++) {
 
 console.log(arrAnnouncements);
 
-const test1 = getRandomPositiveFloat(1,3);
-const test2 = getRandomPositiveInteger(1,3);
