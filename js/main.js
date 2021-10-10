@@ -111,11 +111,11 @@ const createAnnouncement = (index) => {
 };
 
 const arrAnnouncements = [];
-for (let i = 1; i <= 10; i++) {
-  arr.push(createAnnouncement(i))
+for (let index = 1; index <= 10; index++) {
+  arrAnnouncements.push(createAnnouncement(index))
 }
 
 console.log(arrAnnouncements);
 
-
-
+getRandomPositiveFloat(1,3);
+getRandomPositiveInteger(1,3);
