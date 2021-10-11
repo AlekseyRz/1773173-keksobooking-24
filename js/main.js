@@ -70,22 +70,22 @@ const leadingZero = (index) => {
 const createAuthor = (index) => ({ avatar: `img/avatars/user${leadingZero(index)}.png` });
 
 const createOffer = (location) => ({
-    title: 'Тестовый заголовок',
-    address: `${location.lat} ,${location.lng}`,
-    price: randomInt(23000, 75000),
-    type: getRandomArrayElement(TYPES),
-    rooms: randomInt(1,9),
-    guests: randomInt(1,5),
-    checkin: getRandomArrayElement(TIME_IN_OUT),
-    checkout: getRandomArrayElement(TIME_IN_OUT),
-    features: uniqueRandomArr(FEATURES),
-    description: 'Тестовое описание',
-    photos: uniqueRandomArr(PHOTOS), 
+  title: 'Тестовый заголовок',
+  address: `${location.lat} ,${location.lng}`,
+  price: randomInt(23000, 75000),
+  type: getRandomArrayElement(TYPES),
+  rooms: randomInt(1,9),
+  guests: randomInt(1,5),
+  checkin: getRandomArrayElement(TIME_IN_OUT),
+  checkout: getRandomArrayElement(TIME_IN_OUT),
+  features: uniqueRandomArr(FEATURES),
+  description: 'Тестовое описание',
+  photos: uniqueRandomArr(PHOTOS),
 });
 
 const createLocation = () => ({
-    lat: randomFloat(35.65000, 35.70000, 5),  
-    lng: randomFloat(139.70000, 139.80000, 5),
+  lat: randomFloat(35.65000, 35.70000, 5),
+  lng: randomFloat(139.70000, 139.80000, 5),
 });
 
 //Создаем объявление
